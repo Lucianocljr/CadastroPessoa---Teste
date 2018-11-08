@@ -27,8 +27,8 @@ textBotaoListar = display.newText("Listar",display.actualContentWidth/1.35,displ
 function cadastrarPessoa(event)
 	
 	if event.phase == "began" then
-		p.CadastrarPessoa(nomeParametro)
-
+		p:CadastrarPessoa(nomeParametro)
+		--print(nomeParametro.text)
 	end
 end
 botaoCadastrar:addEventListener("touch", cadastrarPessoa)

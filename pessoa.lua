@@ -2,7 +2,7 @@
 pessoa = {nome = "Padrão"}
 
 listaDePessoas = {}
-print(pessoa.nome)
+--print(pessoa.nome)
 function pessoa:newPessoa()
 	newPessoa = {}
 	newPessoa = setmetatable(newPessoa,{_index = pessoa})
@@ -20,7 +20,7 @@ end
 local p = nil
 
 function pessoa:CadastrarPessoa(nomeParametro)
-	print(nomeParametro)
+	print(nomeParametro.text)
 
 	p = pessoa:ConstruirPessoa(nomeParametro)
 	table.insert(listaDePessoas,p)
